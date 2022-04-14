@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <% include css %>
+    <title>Hello, world!</title>
+</head>
+<body class="container">
+<% include nav %>
+
+<form action="/addnew" method="post" enctype="application/x-www-form-urlencoded">
+    <div class="form-group">
+        <label for="exampleInputEmail1">Product name</label>
+        <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+               placeholder="Enter product name" name="productName">
+    </div>
+    <div class="form-group">
+        <label for="exampleInputPassword1">Product's description</label>
+        <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Product's description"
+               name="productDescription">
+    </div>
+    <div class="form-group">
+        <label for="exampleInputPassword2">Product's image link</label>
+        <input type="text" class="form-control" id="exampleInputPassword2" placeholder="Product's image link"
+               name="productImageLink">
+    </div>
+
+    <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+
+<button class="btn"><a href="/list" style="color: black">To list</a></button>
+
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <% include css %>
+    <title>Hello, world!</title>
+</head>
+<body class="container">
+<% include nav %>
+<form action="/upload" method="post" enctype="multipart/form-data">
+<input type="file" name="avatar" />
+    <input type="submit" value="upload"/>
+</form>
+
+
+</body>
+</html>
